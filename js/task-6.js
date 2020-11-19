@@ -4,7 +4,7 @@ const inputLength = inputRef.getAttribute("data-length");
 inputRef.addEventListener("blur", validateInput);
 
 function validateInput(event) {
-  let userInput = event.target.value;
+  const userInput = event.target.value;
   inputRef.classList.remove("invalid");
   inputRef.classList.remove("valid");
 
